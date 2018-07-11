@@ -1,9 +1,11 @@
+'use strict'
+
 var Robot = function (name) {
   this.name = name;
 
 }
 
-function add ( op1, op2 ) {
+function add(op1, op2) {
   this.name = this.name || "Humans";
   return this.name + " can count to " + (op1 + op2);
 }
@@ -17,7 +19,7 @@ var wall_e = new Robot("Wall-E");
 
 
 
-console.log(add(0,1));
+console.log(add(0, 1));
 
 
 console.log(add.call(voltron, 2, 3));
